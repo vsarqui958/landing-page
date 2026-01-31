@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentina Sánchez - Arquitecta Independiente</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Valentina Sánchez</div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <button onclick="scrollToSection('about')" class="nav-link">Acerca de mí</button>
+                    <button onclick="scrollToSection('services')" class="nav-link">Servicios</button>
+                    <button onclick="scrollToSection('portfolio')" class="nav-link">Portafolio</button>
+                    <button onclick="scrollToSection('contact')" class="nav-link">Contacto</button>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav class="nav-mobile" id="mobileNav">
+                <button onclick="scrollToSection('about')" class="nav-link-mobile">Acerca de mí</button>
+                <button onclick="scrollToSection('services')" class="nav-link-mobile">Servicios</button>
+                <button onclick="scrollToSection('portfolio')" class="nav-link-mobile">Portafolio</button>
+                <button onclick="scrollToSection('contact')" class="nav-link-mobile">Contacto</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <!-- Background Image Carousel -->
+        <div class="background-carousel">
+            <div class="background-slide active">
+                <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1920&h=1080&fit=crop" alt="Background 1">
+            </div>
+            <div class="background-slide">
+                <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1920&h=1080&fit=crop" alt="Background 2">
+            </div>
+            <div class="background-slide">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&h=1080&fit=crop" alt="Background 3">
+            </div>
+            <div class="background-slide">
+                <img src="https://images.unsplash.com/photo-1600607687644-aac4c3eac7f4?w=1920&h=1080&fit=crop" alt="Background 4">
+            </div>
+            <div class="background-slide">
+                <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&h=1080&fit=crop" alt="Background 5">
+            </div>
+            <div class="background-slide">
+                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&h=1080&fit=crop" alt="Background 6">
+            </div>
+        </div>
+
+        <!-- Color Overlay -->
+        <div class="about-overlay"></div>
+
+        <!-- Content -->
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title white">Acerca de mí</h2>
+                
+                <!-- Profile Photo -->
+                <div class="profile-photo">
+                    <img src="C:\Users\xenos\OneDrive\Escritorio\arquitecta-independiente\public\FotoPerfil.jpg" alt="Valentina Sánchez - Arquitecta">
+                </div>
+
+                <!-- Bio -->
+                <div class="bio">
+                    <p class="bio-text">
+                        Soy Valentina Sánchez, arquitecta titulada con más de 8 años de experiencia en el diseño y desarrollo de
+                        proyectos arquitectónicos. Mi pasión por crear espacios funcionales y estéticamente atractivos me ha
+                        llevado a especializarme en proyectos residenciales, comerciales y públicos, siempre con un enfoque en
+                        la sustentabilidad y la innovación.
+                    </p>
+                    <p class="bio-text">
+                        Creo firmemente que la arquitectura debe mejorar la calidad de vida de las personas, integrando
+                        armoniosamente el diseño con el entorno natural y las necesidades específicas de cada cliente. Mi
+                        compromiso es acompañarte en cada etapa de tu proyecto, desde la conceptualización inicial hasta la
+                        entrega final, garantizando resultados que superen tus expectativas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="services-content">
+                <h2 class="section-title">Servicios</h2>
+
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/>
+                                    <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/>
+                                    <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/>
+                                    <path d="M10 6h4"/>
+                                    <path d="M10 10h4"/>
+                                    <path d="M10 14h4"/>
+                                    <path d="M10 18h4"/>
+                                </svg>
+                            </div>
+                            <h3 class="service-title">Servicios de Diseño Arquitectónico</h3>
+                        </div>
+                        <ul class="service-list">
+                            <li>• Diseño de proyectos residenciales: Casas, departamentos, ampliaciones</li>
+                            <li>• Diseño de proyectos comerciales: Oficinas, locales, restaurantes</li>
+                            <li>• Diseño de proyectos públicos: Espacios urbanos, plazas, infraestructura municipal</li>
+                            <li>• Renderizados 3D y maquetas digitales: Visualización del proyecto antes de su construcción</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="m22 21-3-3"/>
+                                    <path d="m16 16 3 3"/>
+                                </svg>
+                            </div>
+                            <h3 class="service-title">Servicios de Planificación y Gestión</h3>
+                        </div>
+                        <ul class="service-list">
+                            <li>• Asesoría en compra de terrenos: Evaluación de factibilidad urbana y legal</li>
+                            <li>• Elaboración de anteproyectos y proyectos de arquitectura</li>
+                            <li>• Tramitación de permisos municipales (DIA, EIA, permisos de edificación)</li>
+                            <li>• Coordinación con otros profesionales: Ingenieros, constructores, especialistas</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                                </svg>
+                            </div>
+                            <h3 class="service-title">Servicios Técnicos y Constructivos</h3>
+                        </div>
+                        <ul class="service-list">
+                            <li>• Dirección de obra: Supervisión de la ejecución del proyecto</li>
+                            <li>• Especificaciones técnicas y cálculos estructurales básicos</li>
+                            <li>• Certificados de recepción municipal (término de obra)</li>
+                            <li>• Regularización de propiedades (legalización de viviendas o ampliaciones no declaradas)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 12l2 2 4-4"/>
+                                    <path d="M21 12c.552 0 1.005-.449.95-.998a10 10 0 0 0-8.953-8.951c-.55-.055-.998.398-.998.95v8a1 1 0 0 0 1 1z"/>
+                                    <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7"/>
+                                </svg>
+                            </div>
+                            <h3 class="service-title">Servicios de Consultoría y Evaluación</h3>
+                        </div>
+                        <ul class="service-list">
+                            <li>• Peritajes y tasaciones: Valuación de propiedades con fines legales o comerciales</li>
+                            <li>• Inspección técnica de edificaciones (ITE)</li>
+                            <li>• Asesoría en eficiencia energética y sustentabilidad</li>
+                            <li>• Diagnóstico de propiedades usadas (antes de compra o remodelación)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 5 -->
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 12l2 2 4-4"/>
+                                    <path d="M21 12c.552 0 1.005-.449.95-.998a10 10 0 0 0-8.953-8.951c-.55-.055-.998.398-.998.95v8a1 1 0 0 0 1 1z"/>
+                                    <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7"/>
+                                </svg>
+                            </div>
+                            <h3 class="service-title">Servicios Especializados</h3>
+                        </div>
+                        <ul class="service-list">
+                            <li>• Diseño interior: Distribución de espacios, mobiliario y acabados</li>
+                            <li>• Paisajismo: Diseño de áreas verdes y exteriores</li>
+                            <li>• Restauración de patrimonio: Intervención en edificios históricos</li>
+                            <li>• Certificación CES (Construcción Sustentable)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 6 -->
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 7h.01"/>
+                                    <path d="M3.4 18H12l8.4-8.4a1.42 1.42 0 0 0-2-2L10 16H1.6a.6.6 0 0 0-.6.6v.8a.6.6 0 0 0 .6.6z"/>
+                                    <path d="m16 7 2-2"/>
+                                </svg>
+                            </div>
+                            <h3 class="service-title">Servicios Legales y Administrativos</h3>
+                        </div>
+                        <ul class="service-list">
+                            <li>• Contratos de construcción y asesoría legal básica</li>
+                            <li>• Gestión de subsidios habitacionales (ej.: DS19, Programa de Protección al Patrimonio Familiar)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <div class="portfolio-content">
+                <h2 class="section-title">Portafolio</h2>
+
+                <div class="portfolio-grid">
+                    <div class="portfolio-item" onclick="openModal(1)">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop" alt="Casa Residencial Moderna">
+                        <div class="portfolio-overlay">
+                            <h3>Casa Residencial Moderna</h3>
+                            <p>2023 • Las Condes, Santiago</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" onclick="openModal(2)">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop" alt="Oficinas Corporativas">
+                        <div class="portfolio-overlay">
+                            <h3>Oficinas Corporativas</h3>
+                            <p>2023 • Providencia, Santiago</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" onclick="openModal(3)">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&h=600&fit=crop" alt="Restaurante Gourmet">
+                        <div class="portfolio-overlay">
+                            <h3>Restaurante Gourmet</h3>
+                            <p>2022 • Vitacura, Santiago</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" onclick="openModal(4)">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=600&fit=crop" alt="Remodelación Departamento">
+                        <div class="portfolio-overlay">
+                            <h3>Remodelación Departamento</h3>
+                            <p>2022 • Ñuñoa, Santiago</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" onclick="openModal(5)">
+                        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=600&fit=crop" alt="Plaza Pública">
+                        <div class="portfolio-overlay">
+                            <h3>Plaza Pública</h3>
+                            <p>2021 • Maipú, Santiago</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" onclick="openModal(6)">
+                        <img src="https://images.unsplash.com/photo-1520637836862-4d197d17c93a?w=800&h=600&fit=crop" alt="Restauración Patrimonial">
+                        <div class="portfolio-overlay">
+                            <h3>Restauración Patrimonial</h3>
+                            <p>2021 • Centro Histórico, Santiago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+    <div class="container">
+        <div class="contact-content">
+        <h2 class="section-title">Contacto</h2>
+
+        <div class="contact-grid">
+            <!-- Columna izquierda: texto -->
+            <div class="contact-intro">
+                <h3>Hablemos de tu proyecto</h3>
+                <p>
+                    Estoy aquí para ayudarte a materializar tus ideas arquitectónicas. Contáctame para una consulta
+                    inicial gratuita y conversemos sobre cómo puedo contribuir a hacer realidad tu proyecto.
+                </p>
+            </div>
+
+            <!-- Columna derecha: datos de contacto -->
+            <div class="contact-details">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                </div>
+                <div class="contact-text">
+                    <p class="contact-label">Email</p>
+                    <p class="contact-value">valentina.sanchez@arquitecta.cl</p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                </div>
+                <div class="contact-text">
+                    <p class="contact-label">Teléfono</p>
+                    <p class="contact-value">+56 9 1234 5678</p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                        <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                </div>
+                <div class="contact-text">
+                    <p class="contact-label">Ubicación</p>
+                    <p class="contact-value">Colon 141. Los Ángeles, Chile</p>
+                </div>
+            </div>
+            
+
+            <!-- Si quieres reactivar el formulario, descomenta este bloque completo
+            <div class="contact-form-container">
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                ...
+            </form>
+            </div>
+            -->
+        </div>
+        
+    </div>
+    </section>
+    <!-- Interactive Map Section -->
+    <section class="map-section" id="map">
+        <div class="container">
+            <h2 class="map-title">Ubicación de la Oficina</h2>
+
+            <div class="map-wrap">
+            <!-- Área proporcional del mapa -->
+            <div class="map-container">
+                <iframe
+                class="map-embed"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d215.8200570582885!2d-72.35086147756077!3d-37.47189883041397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x966bddd08299cc9b%3A0x5df9c4d4ff9fd9d4!2sGaler%C3%ADa%20Spazio%20Don%20Victor!5e0!3m2!1ses!2scl!4v1759090954366!5m2!1ses!2scl"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen
+                ></iframe>
+
+                <!-- Marcador centrado (opcional) -->
+                <div class="map-marker-fixed">
+                <div class="marker-pin">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    <div class="marker-label">Galería Spazio Don Víctor</div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Info inferior -->
+            <div class="map-info">
+                <div class="map-info-left">
+                <div class="map-info-icon">
+                    <svg width="50" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                </div>
+                <div>
+                    <div class="map-address">Colón 141 oficina 9</div>
+                    <div class="map-city">Los Ángeles, Región del Biobío - Chile</div>
+                </div>
+                </div>
+
+                <div class="map-info-right">
+                <div class="map-hours-label">Horario de Atención</div>
+                <div class="map-hours">Lun – Vie: 9:00 – 18:00</div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-name">Valentina Sánchez</p>
+                <p class="footer-title">Arquitecta Independiente</p>
+                <p class="footer-copyright">© 2026 Valentina Sánchez. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" onclick="scrollToTop()" style="display: none;">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6,15 12,9 18,15"></polyline>
+        </svg>
+    </button>
+
+    <!-- Portfolio Modal with Carousel -->
+    <div id="portfolioModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-header">
+                <h2 class="modal-title" id="modalTitle"></h2>
+                <p class="modal-subtitle" id="modalSubtitle"></p>
+            </div>
+            
+            <!-- Carousel Container -->
+            <div class="carousel-container">
+                <div class="carousel-wrapper" id="carouselWrapper">
+                    <!-- Images will be inserted here -->
+                </div>
+                
+                <!-- Navigation Arrows -->
+                <button class="carousel-btn carousel-prev" onclick="previousSlide()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15,18 9,12 15,6"></polyline>
+                    </svg>
+                </button>
+                <button class="carousel-btn carousel-next" onclick="nextSlide()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9,18 15,12 9,6"></polyline>
+                    </svg>
+                </button>
+                
+                <!-- Slide Indicators -->
+                <div class="carousel-indicators" id="carouselIndicators">
+                    <!-- Indicators will be inserted here -->
+                </div>
+                
+                <!-- Image Counter -->
+                <div class="image-counter" id="imageCounter">
+                    <span id="currentSlide">1</span> / <span id="totalSlides">1</span>
+                </div>
+            </div>
+            
+            <div class="modal-description" id="modalDescription"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
